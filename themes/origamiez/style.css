@@ -24,6 +24,13 @@ Tested up to: 4.2.2
   margin-top: 0px;
   margin-bottom: 0px; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
 #site-home-link #site-title {
   display: block;
   margin-bottom: 10px; }
@@ -34,22 +41,35 @@ Tested up to: 4.2.2
   margin: 0px auto;
   width: 100%; }
 
+#origamiez-header {
+  margin-bottom: 20px!important;
+  border-bottom: 0!important;
+}
+
 #origamiez-header-top {
-  padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #a81e1e;
+}
 
 #origamiez-header-bottom {
   position: relative;
-  margin-bottom: 1px; }
+  margin-bottom: 1px;
+  background-color: #a81e1e;
+}
 
 #origamiez-logo > a {
-  display: block; }
-#origamiez-logo img {
-  max-width: 100%;
-  height: auto; }
+  display: block;
+}
 
 #origamiez-top-banner > a {
   display: block; }
+
+#origamiez-top-banner img{
+  height: 60px!important;
+  width: 468px!important;
+  align: center!important;
+}
 
 #origamiez-header-bar {
   height: 35px; }
@@ -85,32 +105,77 @@ Tested up to: 4.2.2
  * --------------------------------------------------
  */
 #main-nav {
-  width: 100%; }
+  width: 100%; 
+  background: #a81e1e!important; 
+  border-top: 1px solid #981818!important;
+}
+
   #main-nav.stuckMenu.isStuck {
-    z-index: 999999; }
+    z-index: 999999;
+}
 
 #main-menu {
   display: block;
   padding: 0px;
   margin: 0px;
   list-style-type: none; }
-  #main-menu .sub-menu {
-    display: none; }
-  #main-menu a {
-    text-decoration: none;
-    outline: none; }
+
+#main-menu .sub-menu {
+  display: none; 
+  background: #981818!important;
+  padding: 1px!important;
+}
+
+#main-menu .sub-menu a {
+  text-decoration: none!important;
+  color: #fff!important;
+}
+
+#main-menu .sub-menu a:hover {
+  background-color: #7B1E1E!important;
+}
+
+#main-menu a {
+  text-decoration: none;
+  outline: none; 
+  font-family: 'Titillium Web', sans-serif!important;
+  font-size: 14px!important;
+  font-weight: 700!important;
+  letter-spacing: 0.06em!important;
+}
+
+#main-menu a:hover {
+  color: #ddd!important;
+}
+
+#main-menu > li.current-menu-item > a {
+  color: #fff!important;
+}
+
+#main-menu > li.current-menu-item > a {
+  background-color: #981818!important;
+}
+
   #main-menu > li {
     display: inline-block;
     *display: inline-block; }
     #main-menu > li.origamiez-menuitem-first > a {
-      padding-left: 0px; }
+      padding-left: 20px; }
+
+#main-menu > li.menu-item-has-children > a {
+    color: #fff!important;
+}
+
     #main-menu > li.menu-item-has-children > a:after {
       display: block;
       position: absolute;
       right: 0px;
       top: 0px;
       height: 46px;
-      width: 16px; }
+      width: 16px;
+      color: #fff!important;
+}
+
     #main-menu > li > a {
       display: block;
       height: 46px;
@@ -118,8 +183,14 @@ Tested up to: 4.2.2
       position: relative;
       padding-left: 20px;
       padding-right: 20px; }
+
+#main-menu > li > a:hover {
+    background-color: #981818;
+}
+
   #main-menu li {
     position: relative; }
+
     #main-menu li ul {
       display: block;
       position: absolute;
@@ -129,18 +200,27 @@ Tested up to: 4.2.2
       width: 250px;
       list-style-type: none;
       margin: 0px;
-      padding: 0px 5px; }
+      padding: 0px 5px; 
+      border-top: 0!important;
+    }
+
       #main-menu li ul li {
         list-style-type: none;
         margin: 0px 0px -1px 0px;
-        padding: 0px; }
+        padding: 0px; 
+        border-bottom: 1px solid #7B1E1E!important;
+      }
+
         #main-menu li ul li.menu-item-has-children > a:after {
           display: block;
           position: absolute;
           right: 0px;
           top: 0px;
           height: 40px;
-          width: 16px; }
+          width: 16px; 
+          color: #fff!important;
+        }
+
         #main-menu li ul li a {
           display: block;
           width: 100%;
@@ -417,13 +497,19 @@ form.search-form {
  * --------------------------------------------------
  */
 h2.widget-title {
-  font-size: 14px;
+  font-size: 15px!important;
+  font-family: 'Titillium Web', sans-serif!important;
+  font-weight: 700!important;
+  letter-spacing: 0.06em!important;
+  text-transform: uppercase!important;
+  border-bottom: 2px solid #a81e1e!important;
   margin: 0px;
   padding: 0px;
   text-transform: uppercase;
   height: 50px;
   line-height: 50px;
   vertical-align: middle; }
+
   h2.widget-title.widget-title-fill-background {
     height: 48px;
     line-height: 48px;
@@ -682,6 +768,35 @@ div.alert {
 .widget.widget_text .origamiez-widget-content img {
   max-width: 100%;
   height: auto; }
+
+.origamiez-widget-content ul {
+  list-style-type: none!important;
+  padding: 0!important;
+}
+
+.origamiez-widget-content li a {
+  text-decoration: none!important;
+}
+
+.cat-post-item {
+  margin-bottom: 15px!important;
+}
+
+.cat-post-item a {
+  font-family: "Crimson Text", serif!important;
+  font-weight: 700!important;
+  font-size: 16px!important;
+  line-height: 1.3em!important;
+  text-decoration: none!important;
+}
+
+.cat-post-item p {
+  font-family: "Titillium Web", sans-serif!important;
+  font-style: italic!important;
+  font-weight: 300!important;
+  font-size: 11px!important;
+}
+
 
 /*
  * --------------------------------------------------
@@ -1028,6 +1143,7 @@ body.origamiez-boxer #origamiez-footer-sidebars #origamiez-footer-sidebars-inner
  * --------------------------------------------------
  */
 .breadcrumb {
+  display: none!important;
   min-height: 49px;
   height: 49px;
   height: auto;
