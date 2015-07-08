@@ -31,7 +31,48 @@ Origamiez comes with a simple and clean layout but professional and nice look. T
 
 ##4. Versions
 
-- ####1.1.4 (2015.07.01)
+- ####1.x.x (roadmap - comming soon..)
+    - add: action hooks & filter hooks
+    - add: convert footer menu to dropdown (select-box) on small screen (responsive).
+    - edit: split codes to multi module and join by function get_template_part()
+    - edit: optimize code & apply phpDocuments to comment all codes.
+    - create: API pages on colourstheme.com    
+
+- ####1.1.8 (2015.07.01)
+    - fix: apply default color for some popular social networks.
+    - fix: on blog page, gray overlay background overflow (with small thumbnail).
+    - fix: responsive logo  & top-banner
+    - add: higlight sticky post with border & background color.
+    - add: option "hide top-bar" for Customize >> General Settings >> Layouts
+    - add: option "on/off breadcrumb" for Customize >> General Settings >> Layouts    
+    - add: option "on/off hover effect" for Customize >> General Settings >> Blog posts   
+    - edit: increment size of pagination from 30px -> 40px
+
+- ####1.1.7 (2015.06.30)
+    - edit: Customizer features - add option "link hover color" as color picker
+    - add: 4 options to Customizer >> General Setting >> Single post - adjacent:
+        + show/hide title
+        + show/hide date
+        + upload custom arrow next & previous
+    - add collection responsive class - control show / hide element with all screen (43 class - ../css/reponsive.css)
+    - remove: 2 widgets newsletter & flickr stream by request from Reviewer's Wordpress.org
+
+- ####1.1.6 (2015.06.27)
+    - fix: some js and css.
+    - edit: add animation for main-menu.
+    - add: convert footer menu to dropdown (select-box) on small screen (responsive).
+    - add: new 4 custom widgets:
+        + Posts list slider.
+        + Posts list with background color.
+        + Posts list with format's icon.
+        + Posts list zebra.
+    - add: set default color for some popular social networks.
+    - add: top-bar with top-menu & top-social-links.
+
+- ####1.1.5 (2015.06.24)    
+    - fix: widget newsletter by feedburner don't working
+
+- ####1.1.4 (2015.06.23)   
     - fix: theme compatiable with plugin Ultimate Member
     - add: new custom page "Page Magazine"
     - add: new 7 custom sidebars: Main Top, Main Bottom, Main Center Top, Main Center Bottom, Main Center Left, Main Center Bottom, Left
@@ -143,16 +184,6 @@ See headers of files for further details.
     - Copyright 2013, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
     - Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
     - Released under the WTFPL license - http://sam.zoy.org/wtfpl/
-
-- ####FlickrFeed
-    - Copyright (C) 2009 Joel Sutherland
-    - http://www.newmediacampaigns.com/page/jquery-flickr-plugin
-    - Licenced under the MIT license
-
-- ####IMG Liquid
-    - lejandro Emparan (karacas) / @krc_ale
-    - https://github.com/karacas/imgLiquid
-    - Dual licensed under the MIT and GPL licenses
 
 - ####jQuery Navgoco Menus
     - https://github.com/tefra/navgoco

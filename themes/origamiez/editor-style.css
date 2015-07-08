@@ -1,14 +1,14 @@
 body {
-  font-weight: 300;
-  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-style: normal;
 }
 
 h1 {
-  font-weight: 700;
-  font-family: "Crimson Text", sans-serif;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
   font-size: 22px;
   line-height: 27px;
   font-style: normal;

@@ -4,7 +4,7 @@ get_header();
 
 <div id="sidebar-center" class="pull-left">
 
-    <?php origamiez_get_breadcrumb(); ?>
+    <?php get_template_part('blocks/breadcrumb'); ?>
 
     <?php if (have_posts()) : ?>
         <div class="clearfix"></div>
@@ -13,33 +13,26 @@ get_header();
             <?php
             while (have_posts()) : the_post();
                 ?>
-            <article id="origamiez-post-wrap" <?php post_class('clearfix'); ?>>
-                <h1 class="entry-title" style="display: none;"><?php the_title(); ?></h1>
+                <article id="origamiez-post-wrap" <?php post_class('clearfix'); ?>>
+                    <h1 class="entry-title" style="display: none;"><?php the_title(); ?></h1>
 
                     <div class="entry-content">
-                    <?php 
-                    if(class_exists('CT_Page_Builder')){
-                        add_filter('the_content', array('CT_Page_Builder', 'the_content'));
-                        the_content(); 
-                        remove_filter('the_content', array('CT_Page_Builder', 'the_content'));
-                    }else{
-                        the_content(); 
-                    }
-                    ?>
+                        <?php the_content(); ?>
                     </div>
                     
                     <?php
                     wp_link_pages(array(
-                        'before' => '<div id="ct_singular_pagination" class="clearfix">',
-                        'after' => '</div>',
-                        'next_or_number' => 'next',
-                        'separator' => ' . ',
-                        'nextpagelink' => __('Next', 'origamiez'),
+                        'before'           => '<div id="ct_singular_pagination" class="clearfix">',
+                        'after'            => '</div>',
+                        'next_or_number'   => 'next',
+                        'separator'        => ' . ',
+                        'nextpagelink'     => __('Next', 'origamiez'),
                         'previouspagelink' => __('Previous', 'origamiez'),
                     ));
                     ?>
 
                 </article>
+
                 <?php comments_template(); ?>
 
                 <?php
